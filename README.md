@@ -2,6 +2,26 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Prerequisites
+
+### Node.JS
+
+To install and use this theme, It's required to be installed Node.js on your computer. Node is required only for run and deploy the application, we won't get into too much detail for the same. It' also not required to have detailed knowledge of Node.js
+
+### Node/Yarn - Package Manager
+This React project uses npm / yarn package manager to install and manage 3rd party components and libraries.
+
+## Installation
+1. First of all it's required to Install Node and npm / yarn.
+
+2. You can clone this repo through : git clone https://github.com/Prem877/MoblileFirstTest.git or download zip file
+
+3. Open your favorite console application (Terminal, iTerm, Command Prompt etc.). Navigate to the MobilFirstTest/folder and Install packages  : npm i, npm install or yarn install. This command will install all the required Node.js modules into the node_modules directory inside MobilFirstTest/folder. And now, you are ready to run the MobileFirstTest project for the first time.
+
+4. To run project locally: npm start or yarn start This command will runs the app in development mode. Open http://localhost:3000 to view it in the browser.
+The page will automatically reload if you make changes to the code.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
