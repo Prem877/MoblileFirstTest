@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import FeatherIcon from 'feather-icons-react';
 
@@ -23,6 +23,8 @@ import { useRouteMatch } from 'react-router-dom';
 
 const Topbar = () => {
 
+    const [toggleNav, settoggleNav] = useState(false);
+
    const LoginRoute = useRouteMatch('/login')
 
     const handleLogout = () => {
@@ -44,8 +46,8 @@ const Topbar = () => {
                         <img className='logo' src={Logo} alt='logo' />
                     </Link>
                 </NavbarBrand>
-                <NavbarToggler onClick={function noRefCheck() { }} />
-                <Collapse navbar>
+                <NavbarToggler className='text-white' onClick={()=>settoggleNav(!toggleNav)} />
+                <Collapse isOpen={toggleNav} navbar>
                     <Nav
                         className="me-auto"
                         navbar
