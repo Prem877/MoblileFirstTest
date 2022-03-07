@@ -18,11 +18,12 @@ import {
 import Logo from '../Assets/Images/Logo_mockup.jpg';
 import { removeUserSession } from '../Utils/Comman';
 import { Redirect } from 'react-router-dom';
+import { useRouteMatch } from 'react-router-dom';
 
 
 const Topbar = () => {
 
-    const isAuthenticated = sessionStorage.getItem('isAuthenticated');
+   const LoginRoute = useRouteMatch('/login')
 
     const handleLogout = () => {
         removeUserSession();
@@ -64,7 +65,7 @@ const Topbar = () => {
 
                     </Nav>
                     {
-                        (isAuthenticated)
+                        (!LoginRoute)
                             ?
                             <Link onClick={handleLogout} to='/login'  >
                                 <Button color='light' > Logout <FeatherIcon icon='log-out' /> </Button>
