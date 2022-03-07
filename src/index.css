@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.logo {
+  height:60px;
+  width: 65px;
+  border-radius: 70%;
+}
+
+.jokesCard{
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.jokesCard:hover{
+  box-shadow: 5px 6px 6px 2px #4a4e52;
+  transform: scale(1.05) 
+}
+
+.dashboard .h1 {
+    color: #052770;
+    text-shadow: 1px 2px 3px #2569e7, 0 0 25px #3da2f5, 0 0 8px #3d9db4;
+  
+}
