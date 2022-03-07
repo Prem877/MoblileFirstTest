@@ -46,7 +46,7 @@ const Topbar = () => {
                         <img className='logo' src={Logo} alt='logo' />
                     </Link>
                 </NavbarBrand>
-                <NavbarToggler className='text-white' onClick={()=>settoggleNav(!toggleNav)} />
+                <NavbarToggler className='text-white' onClick={()=>settoggleNav(!toggleNav)} ><FeatherIcon icon='menu' /></NavbarToggler>
                 <Collapse isOpen={toggleNav} navbar>
                     <Nav
                         className="me-auto"
